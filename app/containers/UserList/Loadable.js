@@ -1,10 +1,12 @@
 /**
- * Asynchronously loads the component for HomePage
+ *
+ * Asynchronously loads the component for UserList
+ *
  */
+
 import Loadable from 'react-loadable';
-import Loader from './Loader';
 
 export default Loadable({
   loader: () => import('./index'),
-  loading: Loader
+  loading: () => null,
 });

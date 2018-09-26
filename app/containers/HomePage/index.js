@@ -11,15 +11,17 @@
 
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { Button, Divider, Container } from "semantic-ui-react";
 import messages from './messages';
+import UserList from '../UserList';
 
 /* eslint-disable react/prefer-stateless-function */
 export default class HomePage extends React.PureComponent {
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <Container>
+        <UserList/>
+      </Container>
     );
   }
 }
